@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.facebook_interface.GetUrl">
+      <class name="com.facebook_interface.FindElement">
         <methods>
-          <include name="closeApp"/>
+          <include name="getTitleTest"/>
           <include name="openApp"/>
-          <include name="getUrlTest"/>
+          <include name="closeApp"/>
         </methods>
-      </class> <!-- com.facebook_interface.GetUrl -->
+      </class> <!-- com.facebook_interface.FindElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

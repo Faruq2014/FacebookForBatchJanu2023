@@ -47,7 +47,7 @@ public class LoginTest {
 	// close browser
 	@AfterMethod
 	public void closeApp() {
-		driver.close();
+		//driver.close();
 	}
 
 }
