@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+
+	
+	<listeners>
+		<listener
+			class-name="com.facebook_listeners.FacebookListeners">
+			</listener>
+	</listeners>
+	
+	<test name="Login Test1">
+	
+		<classes>
+			<class name="com.facebook_login.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Login Test2">
+	
+		<classes>
+			<class name="com.facebook_login.LoginTest" />
+		</classes>
+	</test> 
+</suite> 

@@ -43,11 +43,28 @@ public class LoginTest {
 		driver.findElement(By.name("login")).click();
 
 	}
+	@Test
+	public void failLoginTest() {
+		System.out.println("invalid login test");
+		driver.findElement(By.id("email")).sendKeys("fj@bmail.com");
+		driver.findElement(By.id("pass")).sendKeys("y789y");
+		driver.findElement(By.name("login1")).click();
+
+	}
+	
+	@Test(dependsOnMethods="failLoginTest")
+	public void skipLoginTest() {
+		System.out.println("invalid login test");
+		driver.findElement(By.id("email")).sendKeys("fj@bmail.com");
+		driver.findElement(By.id("pass")).sendKeys("y789y");
+		driver.findElement(By.name("login1")).click();
+
+	}
 
 	// close browser
 	@AfterMethod
 	public void closeApp() {
-		//driver.close();
+	driver.close();
 	}
 
 }
